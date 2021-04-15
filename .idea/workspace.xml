@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="756bf6a7-9a8f-4030-93f1-3760200d742d" name="Default Changelist" comment="" />
+    <list default="true" id="756bf6a7-9a8f-4030-93f1-3760200d742d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +24,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Personal_page" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -39,6 +41,9 @@
       <workItem from="1618488231196" duration="2183000" />
       <workItem from="1618501198645" duration="214000" />
       <workItem from="1618501708898" duration="747000" />
+      <workItem from="1618506357031" duration="31000" />
+      <workItem from="1618506390557" duration="79000" />
+      <workItem from="1618506529836" duration="45000" />
     </task>
     <servers />
   </component>
