@@ -101,7 +101,7 @@ def vk_login():
     if "error" in vk_access_json:
         print(vk_access_json)
         return redirect(url_for('index'))
-#   print(vk_access_json)
+    # print(vk_access_json)
 
     vk_id = vk_access_json['user_id']
     access_token = vk_access_json['access_token']
@@ -109,7 +109,7 @@ def vk_login():
     response = requests.get('https://api.vk.com/method/users.get?user_ids=' + str(
         vk_id) + '&fields=bdate&access_token=' + access_token + '&v=5.130')
     vk_user_json = json.loads(response.text)
-#   print(vk_user_json)
+    # print(vk_user_json)
 
     user = Users.query.filter_by(vk_id=vk_id).first()
 
