@@ -1,24 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="756bf6a7-9a8f-4030-93f1-3760200d742d" name="Default Changelist" comment="">
+    <list default="true" id="25f19767-1c2a-47b8-a1a6-bdfdc320e066" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/bin/Activate.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/bin/activate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/bin/activate.csh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/bin/activate.fish" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/bin/easy_install" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/bin/easy_install-3.8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/bin/flask" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/bin/pip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/bin/pip3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/bin/pip3.8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/bin/python" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/bin/python3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/lib64" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/pyvenv.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/share/python-wheels/CacheControl-0.12.6-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/share/python-wheels/appdirs-1.4.3-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/share/python-wheels/certifi-2019.11.28-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/share/python-wheels/chardet-3.0.4-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/share/python-wheels/colorama-0.4.3-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/share/python-wheels/contextlib2-0.6.0-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/share/python-wheels/distlib-0.3.0-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/share/python-wheels/distro-1.4.0-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/share/python-wheels/html5lib-1.0.1-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/share/python-wheels/idna-2.8-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/share/python-wheels/ipaddr-2.2.0-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/share/python-wheels/lockfile-0.12.2-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/share/python-wheels/msgpack-0.6.2-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/share/python-wheels/packaging-20.3-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/share/python-wheels/pep517-0.8.2-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/share/python-wheels/pip-20.0.2-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/share/python-wheels/pkg_resources-0.0.0-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/share/python-wheels/progress-1.5-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/share/python-wheels/pyparsing-2.4.6-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/share/python-wheels/pytoml-0.1.21-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/share/python-wheels/requests-2.22.0-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/share/python-wheels/retrying-1.3.3-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/share/python-wheels/setuptools-44.0.0-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/share/python-wheels/six-1.14.0-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/share/python-wheels/urllib3-1.25.8-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/share/python-wheels/webencodings-0.5.1-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyenv/share/python-wheels/wheel-0.34.2-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/assets/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/index_base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1rCm1LM396l2bGwps1lElKCMTzL" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="1" id="Add" />
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="2" />
   </component>
+  <component name="ProjectId" id="1rim7AYLwfq3cJqhfZrNA8TdUGc" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -29,37 +85,36 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings>
+        <option name="useSoftWraps" value="true" />
+      </console-settings>
+    </option>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="756bf6a7-9a8f-4030-93f1-3760200d742d" name="Default Changelist" comment="" />
-      <created>1618488229481</created>
+      <changelist id="25f19767-1c2a-47b8-a1a6-bdfdc320e066" name="Default Changelist" comment="" />
+      <created>1619467114513</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1618488229481</updated>
-      <workItem from="1618488231196" duration="2183000" />
-      <workItem from="1618501198645" duration="214000" />
-      <workItem from="1618501708898" duration="747000" />
-      <workItem from="1618506357031" duration="31000" />
-      <workItem from="1618506390557" duration="79000" />
-      <workItem from="1618506529836" duration="45000" />
+      <updated>1619467114513</updated>
+      <workItem from="1619467115702" duration="15000" />
+      <workItem from="1619467156536" duration="213000" />
+      <workItem from="1619467395729" duration="20000" />
+      <workItem from="1619467418641" duration="191000" />
+      <workItem from="1619467645343" duration="102000" />
+      <workItem from="1619536444439" duration="3737000" />
+      <workItem from="1619540213081" duration="4272000" />
+      <workItem from="1619624191625" duration="4284000" />
+      <workItem from="1619629812251" duration="120000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

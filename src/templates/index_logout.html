@@ -1,0 +1,61 @@
+{% extends "index_base.html" %}
+
+{% block vk_api_ref %}
+    <script src="https://vk.com/js/api/openapi.js?169" type="text/javascript"></script>
+{% endblock %}
+
+{% block vk_api_init %}
+    <script type="text/javascript">
+      VK.init({
+        apiId: 7840618,
+        onlyWidgets: true
+      });
+    </script>
+{% endblock %}
+
+{% block login %}
+    <a href="{{ url_for('logout') }}">
+        <i class="icofont-vk"></i>  Logout</a>
+{% endblock %}
+
+{% block comments %}
+    <div class="container">
+        <div class="section-title">
+            <h2>Feedback</h2>
+            <p>Ask Me</p>
+        </div>
+        <div id="vk_comments"></div>
+        <script type="text/javascript">
+         VK.Widgets.Comments('vk_comments');
+        </script>
+    </div>
+{% endblock %}
+
+{#{% block posts %}#}
+{#    <div class="container">#}
+{#        <div class="section-title">#}
+{#            <h2>Feedback</h2>#}
+{#            <p>Ask Me</p>#}
+{#        </div>#}
+{#        <form action="" method="post" role="form" class="php-email-form mt-4">#}
+{#            <div class="form-group mt-3">#}
+{#              <textarea class="form-control" readonly="readonly" name="post" rows="20">#}
+{#                  {% for post in posts %}#}
+{#                  {{ post.question }}#}
+{#                  {% endfor %}#}
+{#              </textarea>#}
+{#            </div>#}
+{#        </form>#}
+{#        <form action="{{ url_for('add_question') }}" method="post" role="form" class="php-email-form mt-4">#}
+{#            <div class="form-group mt-3">#}
+{#              <textarea class="form-control" name="question" rows="5" placeholder="Your question" required></textarea>#}
+{#            </div>#}
+{#            <!--<div class="my-3">#}
+{#              <div class="loading">Loading</div>#}
+{#              <div class="error-message"></div>#}
+{#              <div class="sent-message">Your question has been sent. Thank you!</div>#}
+{#            </div>-->#}
+{#            <div class="text-center"><button type="submit">Send question</button></div>#}
+{#        </form>#}
+{#    </div>#}
+{#{% endblock %}#}

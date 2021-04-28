@@ -26,9 +26,18 @@
 
   <!-- Template Main CSS File -->
   <link href="{{ url_for('static', filename='/assets/css/style.css') }}" rel="stylesheet">
+
+  <!-- VK API -->
+  {% block vk_api_ref %}
+  {% endblock %}
+
 </head>
 
 <body>
+  <!-- ======= VK API ======= -->
+  {% block vk_api_init %}
+  {% endblock %}
+  <!-- End VK API -->
 
   <!-- ======= Header ======= -->
   <header id="header" class="header-tops">
@@ -39,6 +48,10 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
+          <li class="login">
+            {% block login %}
+            {% endblock %}
+          </li>
           <li class="active"><a href="#header">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#resume">Resume</a></li>
@@ -54,7 +67,6 @@
         <a href="https://t.me/kznts9v_1lya" class="telegram" target="_blank"><i class="icofont-telegram"></i></a>
         <a href="https://www.instagram.com/kznts9v_1lya/" class="instagram" target="_blank"><i class="icofont-instagram"></i></a>
       </div>
-
     </div>
   </header>
   <!-- End Header -->
@@ -616,6 +628,12 @@
       -->
 
     </div>
+
+{#    {% block posts %}#}
+{#    {% endblock %}#}
+    {% block comments %}
+    {% endblock %}
+
   </section>
   <!-- End Contact Section -->
 
