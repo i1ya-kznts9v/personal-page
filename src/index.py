@@ -95,13 +95,13 @@ def vk_login():
     if not code:
         return redirect(url_for('index'))
 
-    response = requests.get("https://oauth.vk.com/access_token?client_id=7811263&client_secret=hqmY7LJ3d7Ih7pQxhOt0&redirect_uri=http://127.0.0.1:5000/vk_login&code=" + code)
+    response = requests.get("https://oauth.vk.com/access_token?client_id=7811263&client_secret=hqmY7LJ3d7Ih7pQxhOt0&redirect_uri=http://84.252.136.42/vk_login&code=" + code)
     vk_access_json = json.loads(response.text)
 
     if "error" in vk_access_json:
         print(vk_access_json)
         return redirect(url_for('index'))
-    #print(vk_access_json)
+#   print(vk_access_json)
 
     vk_id = vk_access_json['user_id']
     access_token = vk_access_json['access_token']
@@ -109,7 +109,7 @@ def vk_login():
     response = requests.get('https://api.vk.com/method/users.get?user_ids=' + str(
         vk_id) + '&fields=bdate&access_token=' + access_token + '&v=5.130')
     vk_user_json = json.loads(response.text)
-    #print(vk_user_json)
+#   print(vk_user_json)
 
     user = Users.query.filter_by(vk_id=vk_id).first()
 
@@ -161,4 +161,4 @@ def csharpmini():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+    app.run(port=5000, host='0.0.0.0')
