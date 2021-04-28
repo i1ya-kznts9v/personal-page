@@ -30,59 +30,9 @@ class Users(database.Model):
                f'Registered in: {self.registered}\n'
 
 
-# class Posts(database.Model):
-#     author = database.Column(database.String(255), nullable=False)
-#     id = database.Column(database.Integer, primary_key=True)
-#
-#     question = database.Column(database.String(1023), nullable=False)
-#     asked = database.Column(database.DATETIME, default=datetime.utcnow)
-#
-#     answer = database.Column(database.String(1023), nullable=True)
-#     answered = database.Column(database.DATETIME, nullable=True)
-#
-#     def __repr__(self):
-#         return f'Author: {self.author}\n' \
-#                f'ID: {self.id}\n' \
-#                f'Question: {self.question}\n' \
-#                f'Asked in: {self.asked}\n' \
-#                f'Answer: {self.answer}\n' \
-#                f'Answered in: {self.answered}\n'
-
-
-# @app.route("/add_question", methods=["POST", "GET"])
-# def add_question():
-#     if not session.get('user_id'):
-#         return redirect(url_for('index'))
-#
-#     if request.method == "POST":
-#         if len(request.form['question']) > 2:
-#             user_id = session.get('user_id')
-#             user = Users.query.filter_by(id=user_id).first()
-#
-#             new_post = Posts(author=user.name, question=request.form['question'])
-#
-#             try:
-#                 database.session.add(new_post)
-#                 database.session.commit()
-#             except SQLAlchemyError as err:
-#                 database.session.rollback()
-#                 error = str(err.__dict__['orig'])
-#
-#                 print(f"ERROR adding question to database: {error}")
-#
-#                 flash("Question have to contains no less then 2 characters")
-#         else:
-#             flash("Question have to contains no less then 2 characters")
-#
-#     return redirect(url_for('index'))
-
-
 @app.route("/")
 def index():
     if not session.get('user_id') is None:
-        # posts = Posts.query.all()
-        # return render_template('index_logout.html', posts=posts)
-
         return render_template('index_logout.html')
 
     return render_template("index_login.html")
