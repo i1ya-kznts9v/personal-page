@@ -1,4 +1,4 @@
-from flask import Flask, session, render_template, request, redirect, url_for, flash
+from flask import Flask, session, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.exc import SQLAlchemyError
 from datetime import datetime
@@ -32,10 +32,14 @@ class Users(database.Model):
 
 @app.route("/")
 def index():
-    if not session.get('user_id') is None:
-        return render_template('index_logout.html')
+    user_id = session.get('user_id')
 
-    return render_template("index_login.html")
+    if user_id is None:
+        return render_template("index_login.html")
+
+    user = Users.query.filter_by(id=user_id).first()
+
+    return render_template('index_logout.html', name=user.name)
 
 
 @app.route("/vk_login")

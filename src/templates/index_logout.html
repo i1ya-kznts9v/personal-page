@@ -14,19 +14,21 @@
 {% endblock %}
 
 {% block login %}
-    <a href="{{ url_for('logout') }}">
-        <i class="icofont-vk"></i>  Logout</a>
+    <a href="#logout">
+    <i class="icofont-vk"></i>  Logout<br>{{ name }}</a>
 {% endblock %}
 
 {% block comments %}
-    <div class="container">
-        <div class="section-title">
-            <h2>Feedback</h2>
-            <p>Ask Me</p>
-        </div>
+    <div class="section-title">
+        <h2>Feedback</h2>
+        <p>Ask Me</p>
+    </div>
+
+    <div class="info-box">
         <div id="vk_comments"></div>
         <script type="text/javascript">
-         VK.Widgets.Comments('vk_comments');
+        VK.Widgets.Comments('vk_comments',
+        {limit: 10, attach: "*"});
         </script>
     </div>
 {% endblock %}
