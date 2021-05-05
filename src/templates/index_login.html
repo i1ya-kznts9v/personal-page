@@ -2,5 +2,12 @@
 
 {% block login %}
     <a href="https://oauth.vk.com/authorize?client_id=7811263&display=page&redirect_uri=http://127.0.0.1:5000/vk_login&scope=friends&response_type=code&v=5.130">
-        <i class="icofont-vk"></i>  Login</a>
+    <i class="icofont-vk"></i>  Sign in</a>
+{% endblock %}
+
+{% block comments %}
+    <div class="alert alert-primary" role="alert">
+        Before you write to me, please <a href="https://oauth.vk.com/authorize?client_id=7811263&display=page&redirect_uri=http://127.0.0.1:5000/vk_login&scope=friends&response_type=code&v=5.130">
+        <i class="icofont-vk"></i>  sign in</a>!
+    </div>
 {% endblock %}

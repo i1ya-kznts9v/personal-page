@@ -1,4 +1,4 @@
-from flask import Flask, session, render_template, request, redirect, url_for, flash
+from flask import Flask, session, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.exc import SQLAlchemyError
 from datetime import datetime
@@ -79,13 +79,17 @@ class Users(database.Model):
 
 @app.route("/")
 def index():
-    if not session.get('user_id') is None:
-        # posts = Posts.query.all()
-        # return render_template('index_logout.html', posts=posts)
+    user_id = session.get('user_id')
 
-        return render_template('index_logout.html')
+    if user_id is None:
+        return render_template("index_login.html")
 
-    return render_template("index_login.html")
+    # posts = Posts.query.all()
+    # return render_template('index_logout.html', posts=posts)
+
+    user = Users.query.filter_by(id=user_id).first()
+
+    return render_template('index_logout.html', name=user.name)
 
 
 @app.route("/vk_login")
@@ -95,7 +99,8 @@ def vk_login():
     if not code:
         return redirect(url_for('index'))
 
-    response = requests.get("https://oauth.vk.com/access_token?client_id=7811263&client_secret=hqmY7LJ3d7Ih7pQxhOt0&redirect_uri=http://127.0.0.1:5000/vk_login&code=" + code)
+    response = requests.get(
+        "https://oauth.vk.com/access_token?client_id=7811263&client_secret=hqmY7LJ3d7Ih7pQxhOt0&redirect_uri=http://127.0.0.1:5000/vk_login&code=" + code)
     vk_access_json = json.loads(response.text)
 
     if "error" in vk_access_json:

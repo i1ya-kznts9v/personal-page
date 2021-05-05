@@ -39,6 +39,34 @@
   {% endblock %}
   <!-- End VK API -->
 
+  <!-- ======= Logout ======= -->
+  <section id="logout" class="contact">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Logout</h2>
+            <p>Are you sure?</p>
+        </div>
+
+        <div class="info-box">
+            <div class="modal-body">
+                <div style="color:#2AA6F4FF;">Only authorized users can use feedback to contact me through the page, however you can do it in other ways</div>
+            </div>
+
+            <div class="modal-footer">
+                <form action="{{ url_for('logout') }}">
+                    <button type="submit" class="btn btn-dark" style="color:#2AA6F4FF;">Confirm</button>
+                </form>
+                <form action="{{ url_for('index') }}">
+                    <button type="submit" class="btn btn-light" style="color:#2AA6F4FF;">Cancel</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+  </section>
+  <!-- End logout -->
+
   <!-- ======= Header ======= -->
   <header id="header" class="header-tops">
     <div class="container">
@@ -49,14 +77,15 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="login">
-            {% block login %}
-            {% endblock %}
+              {% block login %}
+              {% endblock %}
           </li>
           <li class="active"><a href="#header">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#resume">Resume</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="#feedback">Feedback</a></li>
         </ul>
       </nav>
       <!-- .nav-menu -->
@@ -84,7 +113,7 @@
 
       <div class="row">
         <div class="col-lg-4" data-aos="fade-right">
-          <img src="{{ url_for('static', filename='/assets/img/me.jpg') }}" class="img-fluid" alt="">
+          <img src="{{ url_for('static', filename='/assets/img/me.jpg') }}" class="img-thumbnail" alt="">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
           <h3>Bachelor student & Software Engineer</h3>
@@ -199,23 +228,23 @@
         <div class="col-lg-6">
 
           <div class="progress">
-            <span class="skill">Python <i class="val">60%</i></span>
+            <span class="skill">Python + Notebooks <i class="val">64%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">HTML + CSS <i class="val">60%</i></span>
             <div class="progress-bar-wrap">
               <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
 
           <div class="progress">
-            <span class="skill">Kotlin / Java <i class="val">39%</i></span>
+            <span class="skill">Kotlin / Java <i class="val">41%</i></span>
             <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="39" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">HTML + CSS <i class="val">57%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
 
@@ -243,7 +272,7 @@
 
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
-            <i class="ri-hashtag" style="color: #d37210;"></i>
+            <i class="ri-hashtag" style="color: #536cf3;"></i>
             <h3>MPI | OpenMP | Tasks</h3>
           </div>
         </div>
@@ -279,6 +308,13 @@
 
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
+            <i class="icofont-laptop" style="color: #cc7c2f;"></i>
+            <h3>Notebooks</h3>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
             <i class="ri-html5-line" style="color: #cf3515;"></i>
             <i class="ri-css3-line" style="color: #056fc6;"></i>
             <h3>HTML | CSS</h3>
@@ -291,15 +327,6 @@
             <h3>VCS</h3>
           </div>
         </div>
-
-        <!--
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
-            <h3>Flavor Nivelanda</h3>
-          </div>
-        </div>
-        -->
 
       </div>
     </div>
@@ -332,7 +359,7 @@
             Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
             <i class="bx bxs-quote-alt-right quote-icon-right"></i>
           </p>
-          <img src="{{ url_for('static', filename='/assets/img/testimonials/testimonials-2.jpg') }}" class="testimonial-img" alt="">
+          <img src="" class="testimonial-img" alt="">
           <h3>Sara Wilsson</h3>
           <h4>Designer</h4>
         </div>
@@ -343,7 +370,7 @@
             Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
             <i class="bx bxs-quote-alt-right quote-icon-right"></i>
           </p>
-          <img src="{{ url_for('static', filename='/assets/img/testimonials/testimonials-3.jpg') }}" class="testimonial-img" alt="">
+          <img src="" class="testimonial-img" alt="">
           <h3>Jena Karlis</h3>
           <h4>Store Owner</h4>
         </div>
@@ -395,7 +422,7 @@
           <div class="resume-item">
             <h4>Secondary general education</h4>
             <h5>2008 - 2019</h5>
-            <p><em>Gymnasium A.P. Chekhov, Taganrog</em></p>
+            <p><em>Gymnasium A. P. Chekhov, Taganrog</em></p>
             <p>Got good basic skills in biology and chemistry, as well as a specialized level in physics and mathematics</p>
             <p>Deeply studied the Russian language and won the 3rd rank All-Russian Olympiad in the Russian language, 2019</p>
             <p>Graduated from high school with a red certificate and two gold medals: "For special success in learning" and "For special success to the graduate of Don"</p>
@@ -418,11 +445,11 @@
               <Li>Completed an introduction to GNU / Linux</Li>
               <li>Studied functional programming, including specific data structures, approaches and algorithms. As a practice, a C# sublanguage AST, parser, REPL and interpreter with optimizations and OOP support was implemented on Ocaml</li>
               <li>Studied the introduction to Software Engineering with an extensive understanding of the history, development and main directions of this field</li>
-              <li>Got solid knowledge in mathematical analysis, statistics and logic; computation and probability theory; differential and difference equations and data analysis in Python</li>
+              <li>Got solid knowledge in mathematical analysis, statistics and logic; computation and probability theory; differential and difference equations</li>
+              <li>Gained basic knowledge in Data Science and Machine Learning in Python and mastered the skills of working in laptops such as Datalore and Jupyter</li>
               <li>Acquainted with web development, including front-end in HTML and CSS and back-end in Python. Worked with Flask framework and SQLAlchemy databases. Implemented this page as a project :)</li>
               <li>Completed a product management course, generating and testing ideas; conducting market and audience research, competitors and analogues; developing the strategy, positioning and also the UI and UX concepts of the application, and finally its roadmap. As a group project on Agile methodology, an MVP of a unique application was created</li>
             </ul>
-            </p>
           </div>
 
           <div class="resume-item">
@@ -437,7 +464,6 @@
               <li>Learned to use VCS</li>
               <li>Studied data structures, types and algorithms in conjunction with computer architecture</li>
             </ul>
-            </p>
           </div>
 
         </div>
@@ -515,7 +541,7 @@
        <!--
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap">
-            <img src="{{ url_for('static', filename='/assets/img/portfolio/portfolio-2.jpg') }}" class="img-fluid" alt="">
+            <img src="" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Web 3</h4>
               <p>Web</p>
@@ -529,7 +555,7 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
-            <img src="{{ url_for('static', filename='/assets/img/portfolio/portfolio-3.jpg') }}" class="img-fluid" alt="">
+            <img src="" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>App 2</h4>
               <p>App</p>
@@ -629,16 +655,21 @@
 
     </div>
 
-    <!--
-    {% block posts %}
-    {% endblock %}
-    -->
+  </section>
+  <!-- End Contact Section -->
 
+  <!-- ======= Feedback Section ======= -->
+  <section id="feedback" class="contact">
+    <div class="container">
+
+    {#    {% block posts %}#}
+    {#    {% endblock %}#}
     {% block comments %}
     {% endblock %}
 
+    </div>
   </section>
-  <!-- End Contact Section -->
+  <!-- End Feedback Section -->
 
   <!-- Vendor JS Files -->
   <script src="{{ url_for('static', filename='/assets/vendor/jquery/jquery.min.js') }}"></script>
